@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#170c2b">
+  <meta name="description" content="A little birthday surprise made especially for Meghi.">
+  <title>Oyyeee! A Little Birthday Surprise for You 💗</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="background-glow" aria-hidden="true"></div>
+  <div id="stars" aria-hidden="true"></div>
+  <div id="floating-hearts" aria-hidden="true"></div>
+
+  <audio id="backgroundMusic" loop preload="none">
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+
+  <main class="main-container">
+
+    <!-- SCREEN 1: INTRODUCTION -->
+    <section id="introScreen" class="screen active" aria-hidden="false">
+      <p class="top-label">A LITTLE SURPRISE, MADE BY ME JUST FOR YOU</p>
+
+      <div class="heart-stage" aria-label="A heart with Meghi's name inside">
+        <div class="heart-half heart-left" aria-hidden="true">♥</div>
+        <div class="heart-half heart-right" aria-hidden="true">♥</div>
+
+        <div class="heart-center">
+          <div class="heart-symbol" aria-hidden="true">♥</div>
+          <div id="heartName" class="heart-name">Meghi</div>
+          <div class="mini-sparkle" aria-hidden="true">✧ ✦ ✧</div>
+        </div>
+      </div>
+
+      <div class="date-pill">
+        <span aria-hidden="true">✧</span>
+        <span id="introDate">29 OCTOBER 2026</span>
+        <span aria-hidden="true">✧</span>
+      </div>
+
+      <h1 class="intro-title">
+        A little surprise<br>
+        <span>for my favourite person on her special day</span>
+      </h1>
+
+      <p class="intro-description">
+        Some people make ordinary days brighter just by being themselves.
+        Today, this little surprise is all yours. 💗
+      </p>
+
+      <button id="startButton" class="magic-button" type="button">
+        Open Your Surprise <span aria-hidden="true">✦</span>
+      </button>
+
+      <p class="tiny-note">Made with friendship, smiles, and our bond. 💕</p>
+    </section>
+
+
+    <!-- SCREEN 2: COUNTDOWN -->
+    <section id="countdownScreen" class="screen" aria-hidden="true">
+      <p class="eyebrow">YOUR SPECIAL MOMENT IS ALMOST HERE</p>
+
+      <div class="countdown-heart" aria-hidden="true">💝</div>
+
+      <h1 class="section-title">Ready for the surprise?</h1>
+
+      <p class="section-description">
+        A little sweetness, a little sparkle, and a whole lot of birthday happiness.
+      </p>
+
+      <div class="countdown-circle">
+        <div id="countdownNumber" aria-live="polite">15</div>
+        <span>SECONDS OF HAPPINESS</span>
+      </div>
+
+      <p id="countdownMessage" class="countdown-message">
+        Getting your surprise ready...
+      </p>
+
+      <div class="countdown-sparkles" aria-hidden="true">✨ 💗 ✨ 💫 ✨</div>
+    </section>
+
+
+    <!-- SCREEN 3: CHOCOLATE GIFT -->
+    <section id="chocolateScreen" class="screen" aria-hidden="true">
+      <p class="eyebrow">SURPRISE NUMBER ONE</p>
+
+      <h1 class="section-title">A little box of happiness</h1>
+
+      <p class="section-description">
+        Even the sweetest people deserve a little treat—and you are one
+        of the sweetest souls. 🍫
+      </p>
+
+      <div class="gift-stage">
+        <div class="gift-aura" aria-hidden="true"></div>
+
+        <div id="chocolateGift" class="chocolate-gift">
+          <div class="gift-bow" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <i></i>
+          </div>
+
+          <div class="chocolate-lid" aria-hidden="true"></div>
+
+          <div class="chocolate-box">
+            <div class="chocolate-brand">5 STAR</div>
+            <div class="chocolate-star" aria-hidden="true">★</div>
+            <div class="chocolate-caption">A LITTLE SWEETNESS</div>
+            <div class="gold-line" aria-hidden="true"></div>
+          </div>
+
+          <div class="gift-ribbon" aria-hidden="true"></div>
+        </div>
+
+        <div class="gift-particles" aria-hidden="true">✦ ✧ ✨ ✧ ✦</div>
+      </div>
+
+      <p class="gift-message">A tiny treat for one of my favourite humans. 💗</p>
+
+      <button id="openChocolateButton" class="magic-button" type="button">
+        Open Your Gift 🎁
+      </button>
+
+      <div id="chocolateReveal" class="reveal-box hidden">
+        <div class="reveal-icon" aria-hidden="true">🍫</div>
+
+        <h2>A little sweetness, just for you!</h2>
+
+        <p id="chocolateMessage">
+          Life is more fun with a best friend who turns little moments
+          into big smiles. 💕
+        </p>
+
+        <button id="toCakeButton" class="magic-button" type="button">
+          There's More! 🎂
+        </button>
+      </div>
+    </section>
+
+
+    <!-- SCREEN 4: CAKE AND CANDLES -->
+    <section id="cakeScreen" class="screen" aria-hidden="true">
+      <p class="eyebrow">SURPRISE NUMBER TWO</p>
+
+      <h1 class="section-title">Make a little wish!</h1>
+
+      <p class="section-description">
+        One beautiful cake for one wonderfully unique person in my life. 🎂
+      </p>
+
+      <div class="cake-stage">
+        <div class="cake-glow" aria-hidden="true"></div>
+        <div class="cake-sparkles" aria-hidden="true">✧ ✦ ✧ ✨ ✧ ✦ ✧</div>
+
+        <div class="candles" id="candles" aria-label="Three birthday candles">
+          <div class="candle">
+            <div class="flame"></div>
+            <div class="wick"></div>
+          </div>
+
+          <div class="candle candle-middle">
+            <div class="flame"></div>
+            <div class="wick"></div>
+          </div>
+
+          <div class="candle">
+            <div class="flame"></div>
+            <div class="wick"></div>
+          </div>
+        </div>
+
+        <div id="birthdayCake" class="birthday-cake" aria-label="A pink birthday cake">
+          <div class="cake-top">
+            <div class="cake-top-decoration">♥</div>
+            <div class="cake-berry berry-one"></div>
+            <div class="cake-berry berry-two"></div>
+            <div class="cake-berry berry-three"></div>
+            <div class="cake-berry berry-four"></div>
+          </div>
+
+          <div class="cake-icing"></div>
+
+          <div class="cake-body">
+            <div class="cake-drip drip-one"></div>
+            <div class="cake-drip drip-two"></div>
+            <div class="cake-drip drip-three"></div>
+            <div class="cake-drip drip-four"></div>
+            <div class="cake-drip drip-five"></div>
+
+            <div class="cake-decoration">
+              <span>♥</span>
+              <span>✦</span>
+              <span>♥</span>
+              <span>✦</span>
+              <span>♥</span>
+            </div>
+          </div>
+
+          <div class="cake-base"></div>
+        </div>
+
+        <div id="cakeCutLine" class="cake-cut-line" aria-hidden="true"></div>
+
+        <div id="cakeSlice" class="cake-slice hidden" aria-hidden="true">
+          <div class="slice-icing"></div>
+          <div class="slice-body"></div>
+          <div class="slice-layer"></div>
+        </div>
+      </div>
+
+      <p class="cake-instruction">Close your eyes, make a wish, and smile. 💗</p>
+
+      <button id="blowCandlesButton" class="magic-button" type="button">
+        Blow the Candles ✨
+      </button>
+
+      <button id="cutCakeButton" class="magic-button hidden" type="button">
+        Cut Your Birthday Cake 🎂
+      </button>
+
+      <p id="cakeStatus" class="cake-status" aria-live="polite">
+        Three little flames. Three wishes. Infinite happiness.
+      </p>
+    </section>
+
+
+    <!-- SCREEN 5: FINAL BIRTHDAY MESSAGE -->
+    <section id="finalScreen" class="screen" aria-hidden="true">
+      <div class="final-crown" aria-hidden="true">♕</div>
+      <div class="final-heart" aria-hidden="true">💗</div>
+
+      <p class="eyebrow">A LITTLE MESSAGE FROM THE HEART</p>
+
+      <div class="date-pill final-date-pill">
+        <span aria-hidden="true">✧</span>
+        <span id="finalDate">29 OCTOBER 2026</span>
+        <span aria-hidden="true">✧</span>
+      </div>
+
+      <h1 class="final-title">
+        Happy Birthday,
+        <span id="finalName">Meghi</span>!
+      </h1>
+
+      <div class="final-card">
+        <div class="card-sparkles" aria-hidden="true">✧ ✨ ✦ ✨ ✧</div>
+
+        <p id="finalMessage"></p>
+
+        <div class="final-divider" aria-hidden="true">♡ ✧ ♡</div>
+
+        <div class="memory-note">
+          <span class="memory-heading">A LITTLE FRIENDSHIP MEMORY</span>
+          <p id="friendshipMemory"></p>
+        </div>
+
+        <p class="final-signature">
+          To my favourite person in my life,<br>
+          <span>keep being your beautiful self. 💕</span>
+        </p>
+      </div>
+
+      <div class="final-balloons" aria-hidden="true">🎈 💗 🎈 💜 🎈</div>
+
+      <p class="final-closing">
+        You deserve happiness today and on every ordinary day, too.
+      </p>
+
+      <button id="replayButton" class="magic-button" type="button">
+        Relive the Magic ✨
+      </button>
+
+      <p class="footer-note">Made with a little love and a lot of friendship. 💖</p>
+    </section>
+
+  </main>
+
+  <div id="confettiContainer" aria-hidden="true"></div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
